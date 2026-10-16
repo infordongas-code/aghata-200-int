@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entre Páginas | Livros de Romance</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topo">
+    <a class="logo" href="#"><span class="logo-icon">♡</span> Entre Páginas</a>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#catalogo">Livros</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+    <button class="carrinho" id="verCarrinho" aria-label="Ver sacola">♡ <span id="contador">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-texto">
+        <span class="etiqueta">UM CAPÍTULO DE CADA VEZ</span>
+        <h1>Histórias que fazem<br><em>o coração bater</em><br>mais forte.</h1>
+        <p>Encontre seu próximo amor entre páginas cheias de encontros, emoções e finais inesquecíveis.</p>
+        <a class="botao-principal" href="#catalogo">Explorar romances <span>→</span></a>
+      </div>
+      <div class="hero-arte" aria-label="Ilustração decorativa de livros">
+        <div class="circulo"></div>
+        <div class="livro livro-1"><span>O lado<br>bonito do<br>amor</span><small>uma história para sentir</small></div>
+        <div class="livro livro-2"><span>Cartas<br>para você</span><small>romance</small></div>
+        <div class="flor">✿</div>
+        <div class="coracao">♡</div>
+      </div>
+    </section>
+
+    <section class="catalogo secao" id="catalogo">
+      <div class="cabecalho-secao">
+        <div>
+          <span class="etiqueta">SUA PRÓXIMA LEITURA</span>
+          <h2>Romances em destaque</h2>
+        </div>
+        <label class="busca"><span>⌕</span><input id="pesquisa" type="search" placeholder="Buscar um livro..." aria-label="Buscar um livro"></label>
+      </div>
+      <div class="filtros" aria-label="Filtrar por categoria">
+        <button class="filtro ativo" data-categoria="todos">Todos</button>
+        <button class="filtro" data-categoria="contemporaneo">Contemporâneo</button>
+        <button class="filtro" data-categoria="classico">Clássicos</button>
+        <button class="filtro" data-categoria="fantasia">Romance fantástico</button>
+      </div>
+      <div class="grade-livros" id="gradeLivros"></div>
+      <p class="sem-resultados" id="semResultados" hidden>Nenhum livro encontrado. Tente outra busca.</p>
+    </section>
+
+    <section class="frase">
+      <span>“</span>
+      <p>Às vezes, tudo o que precisamos é de uma boa história<br>para lembrar que o amor ainda mora por aqui.</p>
+      <small>— Entre Páginas</small>
+    </section>
+
+    <section class="sobre secao" id="sobre">
+      <div class="sobre-simbolo">♡</div>
+      <div>
+        <span class="etiqueta">FEITO PARA QUEM AMA LER</span>
+        <h2>Mais que livros.<br><em>Sentimentos em cada página.</em></h2>
+        <p>A Entre Páginas é uma vitrine fictícia criada para quem acredita no poder das histórias românticas. Explore o catálogo, pesquise títulos e monte sua lista de favoritos.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#"><span class="logo-icon">♡</span> Entre Páginas</a>
+    <p>Feito com carinho para apaixonados por histórias. © <span id="ano"></span></p>
+  </footer>
+  <div class="aviso" id="aviso" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
